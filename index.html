@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/imports.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/mobile.css" />
   </head>
   <body>
     <header>
@@ -127,6 +128,7 @@
               <img
                 src="./assets/img/Icone - Analise de Dados.svg"
                 alt="imagem analise de dados"
+                class="img-servico"
               />
             </div>
             <p class="txt-gradient">
@@ -143,6 +145,7 @@
               <img
                 src="./assets/img/Icone - Administração de Equipe.svg"
                 alt="imagem administracao de equipe"
+                class="img-servico"
               />
             </div>
             <p class="txt-gradient">
@@ -159,6 +162,7 @@
               <img
                 src="./assets/img/Icone - Controle de Finanças.svg"
                 alt="imagem controle financas"
+                class="img-servico"
               />
             </div>
             <p class="txt-gradient">
@@ -209,11 +213,6 @@
       <section class="section-quem-somos" id="quem-somos">
         <h1>Quem Somos</h1>
         <div class="content-quem-somos">
-          <img
-            src="./assets/img/Vetor - Quem Somos.svg"
-            alt="vetor quem somos"
-            class="background-quem-somos"
-          />
           <div class="grid-quem-somos">
             <div class="card-quem-somos">
               <img
@@ -291,6 +290,7 @@
               id="nome"
               name="nome"
               placeholder="Seu nome"
+              maxlength="35"
             />
             <iconify-icon icon="material-symbols:person-outline"></iconify-icon>
           </div>
@@ -301,6 +301,7 @@
               id="email"
               name="email"
               placeholder="Seu email"
+              maxlength="35"
             />
             <iconify-icon icon="mdi:email-outline"></iconify-icon>
           </div>
@@ -309,6 +310,7 @@
             name="descricao"
             id="descricao"
             placeholder="Escreva sua mensagem"
+            maxlength="300"
           ></textarea>
           <div class="botao-form">
             <button class="btn-background" onclick="enviar">
@@ -327,7 +329,7 @@
           <img
             class="logo-footer"
             src="./assets/img/Logo - Libellus Branco.svg"
-            alt="logo branca"
+            alt="Logo da Libellus Branca"
           />
           <div class="redes-sociais">
             <div class="circle-footer">
