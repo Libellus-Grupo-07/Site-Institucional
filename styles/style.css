@@ -48,8 +48,12 @@ body {
 }
 
 header {
+  background-color: var(--branco-secundario);
   width: 100vw;
+  position: fixed;
   padding: 24px 0px;
+  backdrop-filter: blur(70px);
+  z-index: 99999;
 }
 
 header nav {
@@ -59,35 +63,53 @@ header nav {
   justify-content: space-between;
 }
 
-header nav ul {
-  width: 40vw;
+header nav .nav {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav .nav .nav-item, header nav .nav .slow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-itens:center;
+}
+
+header nav .nav ul {
+  width: 35vw;
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-header nav ul li .nav-title {
+header nav .nav ul li .nav-title {
   font-family: "Poppins";
   font-size: 16px;
 }
 
-header nav ul a {
+header nav .nav ul a {
   transition: all 0.4s linear;
 }
 
-header nav ul a:hover {
+header nav .nav ul a:hover {
   font-size: 16px;
-  background: linear-gradient(
-    100deg,
-    rgba(149, 49, 224, 1) 0%,
-    rgba(56, 236, 233, 1) 100%
-  );
+  background: linear-gradient(100deg,
+      rgba(149, 49, 224, 1) 0%,
+      rgba(56, 236, 233, 1) 100%);
   font-weight: 500;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
+
+header nav .menu {
+  display: none;
+  cursor: pointer;
+  transition: all 0.4s linear;
+}
+
 
 main {
   width: 100%;
@@ -108,22 +130,24 @@ section {
 main .section-inicio {
   width: 75vw;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
   align-items: center;
   height: 368px;
   margin-bottom: 3rem;
+  margin-top: 6rem;
 }
 
 main .section-inicio .text-inicio {
-  width: 35vw;
+  width: 55%;
   height: fit-content;
   display: inline-block;
 }
 
 main .section-inicio .text-inicio h1 {
-  font-size: 56px;
+  font-size: 52px;
   letter-spacing: -0.15rem;
-  line-height: 80px;
+  line-height: 15vh;
   margin-left: 8px;
 }
 
@@ -147,12 +171,13 @@ main .section-inicio .text-inicio h1 .wrapper {
 } */
 
 main .section-inicio .text-inicio h1 .wrapper {
+  position: absolute;
   display: flex;
-  margin-left: 11vw;
+  margin-left: 23vh;
   width: 30vw;
   flex-direction: column;
   /* border: 1px solid; */
-  margin-top: -18%;
+  margin-top: -15vh;
 }
 
 main .section-inicio .text-inicio h1 .wrapper .dynamic-txts {
@@ -180,11 +205,9 @@ main .section-inicio .text-inicio h1 .dynamic-txts li {
 main .section-inicio .text-inicio h1 .dynamic-txts li span {
   position: relative;
   line-height: 90px;
-  background: linear-gradient(
-    90deg,
-    rgba(149, 49, 224, 1) 0%,
-    rgba(56, 236, 233, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(149, 49, 224, 1) 0%,
+      rgba(56, 236, 233, 1) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -194,20 +217,15 @@ main .section-inicio .text-inicio h1 .dynamic-txts li span::after {
   content: "";
   position: absolute;
   left: 0;
-  height: 100%;
+  top: -5px;
+  height: 108%;
   width: 100%;
   background-color: var(--branco-secundario);
-  background: linear-gradient(
-        var(--branco-secundario),
-        var(--branco-secundario)
-      )
-      padding-box,
-    linear-gradient(
-        100deg,
-        rgba(149, 49, 224, 1) 0%,
-        rgba(56, 236, 233, 1) 100%
-      )
-      border-box;
+  background: linear-gradient(var(--branco-secundario),
+      var(--branco-secundario)) padding-box,
+    linear-gradient(100deg,
+      rgba(149, 49, 224, 1) 0%,
+      rgba(56, 236, 233, 1) 100%) border-box;
   border: 2px solid transparent;
   animation: typing 3s steps(8) infinite;
   border-top-width: 0px;
@@ -227,6 +245,7 @@ main .section-inicio .text-inicio h1 .wrapper .txt-gradient::after {
 }
 
 @keyframes typing {
+
   40%,
   60% {
     left: calc(100% + 30px);
@@ -247,15 +266,15 @@ main .section-inicio .image-inicio {
 main .section-inicio .image-inicio .background-inicio {
   position: absolute;
   width: auto;
-  height: 372px;
+  height: 348px;
   right: 0;
   margin-top: 5%;
   z-index: 1;
 }
 
 main .section-inicio .image-inicio .img-inicio {
-  width: max-content;
-  height: 308px;
+  width: auto;
+  height: 274px;
   z-index: 999;
 }
 
@@ -277,12 +296,9 @@ main .section-servicos .content-servicos {
 
 main .section-servicos .content-servicos .card-servicos {
   background: linear-gradient(white, white) padding-box,
-    linear-gradient(
-        100deg,
-        rgba(149, 49, 224, 1) 0%,
-        rgba(56, 236, 233, 1) 100%
-      )
-      border-box;
+    linear-gradient(100deg,
+      rgba(149, 49, 224, 1) 0%,
+      rgba(56, 236, 233, 1) 100%) border-box;
   border: 1px solid transparent;
   border-top-width: 7px;
   height: fit-content;
@@ -314,11 +330,7 @@ main .section-servicos .content-servicos .card-servicos .txt-gradient {
   line-height: 28px;
 }
 
-main
-  .section-servicos
-  .content-servicos
-  .card-servicos
-  .circle-ilustration-servicos {
+main .section-servicos .content-servicos .card-servicos .circle-ilustration-servicos {
   width: 56px;
   height: 56px;
   padding: 2rem;
@@ -326,12 +338,9 @@ main
   align-items: center;
   justify-content: center;
   background: linear-gradient(white, white) padding-box,
-    linear-gradient(
-        100deg,
-        rgba(149, 49, 224, 1) 0%,
-        rgba(56, 236, 233, 1) 100%
-      )
-      border-box;
+    linear-gradient(100deg,
+      rgba(149, 49, 224, 1) 0%,
+      rgba(56, 236, 233, 1) 100%) border-box;
   border-radius: 5rem;
   border: 2px solid transparent;
 }
@@ -365,12 +374,7 @@ main .section-produto .content-produto .image-produto .background-produto {
   margin-top: 10%;
 }
 
-main
-  .section-produto
-  .content-produto
-  .image-produto
-  .circle-produtos
-  .img-produto {
+main .section-produto .content-produto .image-produto .circle-produtos .img-produto {
   width: auto;
   height: 4.5vw;
 }
@@ -383,11 +387,9 @@ main .section-produto .content-produto .image-produto .circle-produtos {
   justify-content: center;
   align-items: center;
   padding: 2.5rem;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.25) 20%,
-    rgba(243, 243, 243, 0.25) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 0.25) 20%,
+      rgba(243, 243, 243, 0.25) 100%);
   backdrop-filter: blur(70px);
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 100%;
@@ -422,12 +424,7 @@ main .section-produto .content-produto .informacoes-produto .texto-produto {
   row-gap: 24px;
 }
 
-main
-  .section-produto
-  .content-produto
-  .informacoes-produto
-  .texto-produto
-  .txt-descricao-produto {
+main .section-produto .content-produto .informacoes-produto .texto-produto .txt-descricao-produto {
   font-size: 20px;
   line-height: 1.5;
   font-family: "Work Sans", Arial, Helvetica, sans-serif;
@@ -483,35 +480,20 @@ main .section-quem-somos .content-quem-somos .grid-quem-somos .card-quem-somos {
   box-shadow: -10px 4px 2px rgba(0, 0, 0, 0.15);
 }
 
-main
-  .section-quem-somos
-  .content-quem-somos
-  .grid-quem-somos
-  .card-quem-somos
-  .img-quem-somos {
+main .section-quem-somos .content-quem-somos .grid-quem-somos .card-quem-somos .img-quem-somos {
   width: auto;
   margin-top: -30%;
   height: 96px;
 }
 
-main
-  .section-quem-somos
-  .content-quem-somos
-  .grid-quem-somos
-  .card-quem-somos
-  .title-quem-somos {
+main .section-quem-somos .content-quem-somos .grid-quem-somos .card-quem-somos .title-quem-somos {
   font-size: 20px;
   font-weight: 700;
   color: var(--roxo-secundario);
   text-align: center;
 }
 
-main
-  .section-quem-somos
-  .content-quem-somos
-  .grid-quem-somos
-  .card-quem-somos
-  .subtitle-quem-somos {
+main .section-quem-somos .content-quem-somos .grid-quem-somos .card-quem-somos .subtitle-quem-somos {
   font-family: "Work Sans", Arial, Helvetica, sans-serif;
   font-size: 18px;
   text-align: center;
@@ -549,12 +531,9 @@ main .section-contato form textarea {
   min-width: 160px;
   max-width: 680px;
   background: linear-gradient(white, white) padding-box,
-    linear-gradient(
-        100deg,
-        rgba(149, 49, 224, 1) 0%,
-        rgba(56, 236, 233, 1) 100%
-      )
-      border-box;
+    linear-gradient(100deg,
+      rgba(149, 49, 224, 1) 0%,
+      rgba(56, 236, 233, 1) 100%) border-box;
   border-radius: 2rem;
   border: 1px solid transparent;
   padding: 16px 24px;
@@ -590,6 +569,7 @@ footer {
 
 footer .footer {
   width: 85%;
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
   margin-top: 18rem;
@@ -664,7 +644,7 @@ footer .footer .footer-ul iconify-icon {
   font-size: 24px;
 }
 
-footer .footer .contate-nos {
+footer .footer .footer-ul:last-child {
   width: 30%;
 }
 
@@ -695,11 +675,9 @@ button {
   display: flex;
   align-items: center;
   column-gap: 8px;
-  background: linear-gradient(
-    100deg,
-    rgba(149, 49, 224, 1) 0%,
-    rgba(56, 236, 233, 1) 100%
-  );
+  background: linear-gradient(100deg,
+      rgba(149, 49, 224, 1) 0%,
+      rgba(56, 236, 233, 1) 100%);
   cursor: pointer;
   border: none;
   font-size: 16px;
@@ -715,21 +693,16 @@ button {
 
 .btn-background:hover {
   background: linear-gradient(white, white) padding-box,
-    linear-gradient(
-        100deg,
-        rgba(149, 49, 224, 1) 0%,
-        rgba(56, 236, 233, 1) 100%
-      )
-      border-box;
+    linear-gradient(100deg,
+      rgba(149, 49, 224, 1) 0%,
+      rgba(56, 236, 233, 1) 100%) border-box;
   border: 2px solid transparent;
 }
 
 .btn-background:hover span {
-  background: linear-gradient(
-    90deg,
-    rgba(149, 49, 224, 1) 0%,
-    rgba(56, 236, 233, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(149, 49, 224, 1) 0%,
+      rgba(56, 236, 233, 1) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -741,11 +714,9 @@ button {
 }
 
 .txt-gradient {
-  background: linear-gradient(
-    90deg,
-    rgba(149, 49, 224, 1) 0%,
-    rgba(56, 236, 233, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(149, 49, 224, 1) 0%,
+      rgba(56, 236, 233, 1) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -754,12 +725,9 @@ button {
 
 .btn-border {
   background: linear-gradient(white, white) padding-box,
-    linear-gradient(
-        100deg,
-        rgba(149, 49, 224, 1) 0%,
-        rgba(56, 236, 233, 1) 100%
-      )
-      border-box;
+    linear-gradient(100deg,
+      rgba(149, 49, 224, 1) 0%,
+      rgba(56, 236, 233, 1) 100%) border-box;
   border-radius: 50em;
   border: 2px solid transparent;
   cursor: pointer;
@@ -770,11 +738,9 @@ button {
 
 .btn-border:hover {
   background-image: none;
-  background: linear-gradient(
-    100deg,
-    rgba(149, 49, 224, 1) 0%,
-    rgba(56, 236, 233, 1) 100%
-  );
+  background: linear-gradient(100deg,
+      rgba(149, 49, 224, 1) 0%,
+      rgba(56, 236, 233, 1) 100%);
   border-width: 0px;
   border-color: transparent;
 }
