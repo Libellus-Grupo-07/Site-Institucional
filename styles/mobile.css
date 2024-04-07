@@ -16,7 +16,6 @@ largura máxima de 420px */
     /* border:1px solid; */
   }
 
-
   header nav {
     /* height: 100%; */
     margin: 0 auto;
@@ -46,14 +45,13 @@ largura máxima de 420px */
     font-size: 16px;
   }
 
-    header nav .nav .nav-item {
-      height: 92vh;
-    }
-  
-    header nav .nav .slow {
-      height: 92vh;
-    }
+  header nav .nav .nav-item {
+    height: 92vh;
+  }
 
+  header nav .nav .slow {
+    height: 92vh;
+  }
 
   main {
     row-gap: 3rem;
@@ -107,8 +105,6 @@ largura máxima de 420px */
     position: relative;
     /* top: -5%; */
     animation: slide 12s steps(4) infinite;
-
-
   }
 
   main .section-inicio .text-inicio h1 .dynamic-txts li span {
@@ -117,7 +113,6 @@ largura máxima de 420px */
   }
 
   @keyframes typing {
-
     40%,
     60% {
       left: calc(100% + 35px);
@@ -127,7 +122,6 @@ largura máxima de 420px */
       left: 0;
     }
   }
-
 
   @keyframes slide {
     100% {
@@ -181,13 +175,22 @@ largura máxima de 420px */
     line-height: 18px;
   }
 
-  main .section-servicos .content-servicos .card-servicos .circle-ilustration-servicos {
+  main
+    .section-servicos
+    .content-servicos
+    .card-servicos
+    .circle-ilustration-servicos {
     width: 64px;
     height: 64px;
     padding: 0.5rem;
   }
 
-  main .section-servicos .content-servicos .card-servicos .circle-ilustration-servicos .img-servico {
+  main
+    .section-servicos
+    .content-servicos
+    .card-servicos
+    .circle-ilustration-servicos
+    .img-servico {
     width: 48px;
     height: 48px;
   }
@@ -220,18 +223,23 @@ largura máxima de 420px */
     width: 100%;
     height: 288px;
     left: -5%;
-    margin-top: 35%;
+    margin-top: 30%;
   }
 
-  main .section-produto .content-produto .image-produto .circle-produtos .img-produto {
-    width: 54vw;
-    height: auto;
+  main
+    .section-produto
+    .content-produto
+    .image-produto
+    .circle-produtos
+    .img-produto {
+    width: auto;
+    height: 40px;
   }
 
   main .section-produto .content-produto .image-produto .circle-produtos {
     /* position: relative; */
-    height: 120px;
-    width: 120px;
+    height: 160px;
+    width: 160px;
   }
 
   main .section-produto .content-produto .informacoes-produto {
@@ -259,7 +267,12 @@ largura máxima de 420px */
     row-gap: 12px;
   }
 
-  main .section-produto .content-produto .informacoes-produto .texto-produto .txt-descricao-produto {
+  main
+    .section-produto
+    .content-produto
+    .informacoes-produto
+    .texto-produto
+    .txt-descricao-produto {
     font-size: 16px;
     line-height: 1.5;
     font-family: "Work Sans", Arial, Helvetica, sans-serif;
@@ -296,7 +309,11 @@ largura máxima de 420px */
     z-index: 999;
   }
 
-  main .section-quem-somos .content-quem-somos .grid-quem-somos .card-quem-somos {
+  main
+    .section-quem-somos
+    .content-quem-somos
+    .grid-quem-somos
+    .card-quem-somos {
     position: relative;
     background-color: white;
     max-width: 238px;
@@ -305,16 +322,31 @@ largura máxima de 420px */
     box-shadow: -10px 4px 2px rgba(0, 0, 0, 0.15);
   }
 
-  main .section-quem-somos .content-quem-somos .grid-quem-somos .card-quem-somos .img-quem-somos {
+  main
+    .section-quem-somos
+    .content-quem-somos
+    .grid-quem-somos
+    .card-quem-somos
+    .img-quem-somos {
     margin-top: -30%;
     height: 96px;
   }
 
-  main .section-quem-somos .content-quem-somos .grid-quem-somos .card-quem-somos .title-quem-somos {
+  main
+    .section-quem-somos
+    .content-quem-somos
+    .grid-quem-somos
+    .card-quem-somos
+    .title-quem-somos {
     font-size: 18px;
   }
 
-  main .section-quem-somos .content-quem-somos .grid-quem-somos .card-quem-somos .subtitle-quem-somos {
+  main
+    .section-quem-somos
+    .content-quem-somos
+    .grid-quem-somos
+    .card-quem-somos
+    .subtitle-quem-somos {
     font-size: 16px;
     line-height: 16px;
   }
@@ -334,9 +366,12 @@ largura máxima de 420px */
   main .section-contato form textarea {
     width: 60vw;
     background: linear-gradient(white, white) padding-box,
-      linear-gradient(100deg,
-        rgba(149, 49, 224, 1) 0%,
-        rgba(56, 236, 233, 1) 100%) border-box;
+      linear-gradient(
+          100deg,
+          rgba(149, 49, 224, 1) 0%,
+          rgba(56, 236, 233, 1) 100%
+        )
+        border-box;
     border-radius: 2rem;
     border: 1px solid transparent;
     padding: 8px 24px;
@@ -389,7 +424,7 @@ largura máxima de 420px */
     flex-direction: column;
     align-itens: center;
     justify-content: center;
-    margin-top:8rem;
+    margin-top: 8rem;
     row-gap: 2rem;
     color: #f5f5f5;
   }
@@ -404,7 +439,6 @@ largura máxima de 420px */
 
   footer .footer-redes-sociais .logo-footer {
     height: 64px;
-
   }
 
   footer .footer-redes-sociais .redes-sociais {
@@ -493,5 +527,70 @@ largura máxima de 420px */
     color: var(--texto-branco);
     font-size: 24px;
     font-weight: 600;
+  }
+}
+
+@media (max-height: 667px) {
+  main .section-inicio .text-inicio .title-inicio {
+    font-size: 32px;
+    line-height: 56px;
+  }
+
+  main .section-inicio .text-inicio h1 .wrapper {
+    margin-left: 88px;
+    margin-top: -72px;
+  }
+
+  main .section-inicio .text-inicio h1 .wrapper .dynamic-txts {
+    font-size: 32px;
+  }
+
+  main .section-inicio .image-inicio .img-inicio {
+    margin: 0 auto;
+    width: 200px;
+    height: auto;
+  }
+
+  main .section-inicio .image-inicio .background-inicio {
+    height: 200px;
+    right: 0;
+    margin-top: 30%;
+  }
+}
+
+@media (max-height: 932px){
+  main .section-inicio{
+    margin-bottom: 3rem;
+  }
+
+  main .section-inicio .text-inicio{
+    width: 95%;
+    margin-bottom: 1rem;
+  }
+
+  main .section-inicio .text-inicio .title-inicio {
+    font-size: 30px;
+    line-height: 56px;
+  }
+
+  main .section-inicio .text-inicio h1 .wrapper {
+    margin-left: 72px;
+    margin-top: -72px;
+  }
+
+  main .section-inicio .text-inicio h1 .wrapper .dynamic-txts {
+    font-size: 30px;
+  }
+
+  main .section-inicio .image-inicio .img-inicio {
+    margin: 0 auto;
+    width: 200px;
+    height: auto;
+  }
+
+  main .section-inicio .image-inicio .background-inicio {
+    height: 200px;
+    right: 0;
+    margin-top: 25%;
   }
 }
