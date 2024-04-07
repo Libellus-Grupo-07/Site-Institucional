@@ -75,7 +75,7 @@ largura máxima de 420px */
 
   main .section-inicio .text-inicio .title-inicio {
     width: 125%;
-    font-size: 28px;
+    font-size: 32px;
     /* width: fit-content; */
     /* border: 1px solid; */
     line-height: 50px;
@@ -94,7 +94,7 @@ largura máxima de 420px */
     height: 90px;
     line-height: 90px;
     overflow: hidden;
-    font-size: 28px;
+    font-size: 30px;
   }
 
   main .section-inicio .text-inicio h1 .dynamic-txts li {
@@ -402,7 +402,7 @@ largura máxima de 420px */
   }
 
   h1 {
-    font-size: 18px;
+    font-size: 24px;
   }
 
   footer {
@@ -530,7 +530,7 @@ largura máxima de 420px */
   }
 }
 
-@media (max-height: 667px) {
+@media (max-height: 667px) and (max-width:500px) {
   main .section-inicio .text-inicio .title-inicio {
     font-size: 32px;
     line-height: 56px;
@@ -554,11 +554,11 @@ largura máxima de 420px */
   main .section-inicio .image-inicio .background-inicio {
     height: 200px;
     right: 0;
-    margin-top: 30%;
+    margin-top: 100%;
   }
 }
 
-@media (max-height: 932px){
+@media (max-height: 932px) and (max-width: 500px){
   main .section-inicio{
     margin-bottom: 3rem;
   }
@@ -569,12 +569,12 @@ largura máxima de 420px */
   }
 
   main .section-inicio .text-inicio .title-inicio {
-    font-size: 30px;
+    font-size: 34px;
     line-height: 56px;
   }
 
   main .section-inicio .text-inicio h1 .wrapper {
-    margin-left: 72px;
+    margin-left: 88px;
     margin-top: -72px;
   }
 
@@ -589,8 +589,8 @@ largura máxima de 420px */
   }
 
   main .section-inicio .image-inicio .background-inicio {
-    height: 200px;
-    right: 0;
-    margin-top: 25%;
+    height: 228px;
+    right: -32px;
+    margin-top: 80px;
   }
 }
