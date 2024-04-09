@@ -45,14 +45,16 @@
 body {
   background-color: var(--branco-secundario);
   overflow-x: hidden;
+  width: 100vw;
 }
 
 header {
   background-color: var(--branco-secundario);
+  background: linear-gradient(120deg, rgba(248, 247, 249, 0.9) 10%, rgba(248, 247, 249, 1) 100%);
   width: 100vw;
   position: fixed;
   padding: 24px 0px;
-  backdrop-filter: blur(70px);
+  backdrop-filter: blur(7px);
   z-index: 99999;
 }
 
@@ -147,7 +149,7 @@ main .section-inicio .text-inicio {
 main .section-inicio .text-inicio h1 {
   font-size: 52px;
   letter-spacing: -0.15rem;
-  line-height: 15vh;
+  line-height: 80px;
   margin-left: 8px;
 }
 
@@ -173,11 +175,11 @@ main .section-inicio .text-inicio h1 .wrapper {
 main .section-inicio .text-inicio h1 .wrapper {
   position: absolute;
   display: flex;
-  margin-left: 23vh;
+  margin-left: 136px;
   width: 30vw;
   flex-direction: column;
   /* border: 1px solid; */
-  margin-top: -15vh;
+  margin-top: -86px;
 }
 
 main .section-inicio .text-inicio h1 .wrapper .dynamic-txts {
@@ -266,7 +268,7 @@ main .section-inicio .image-inicio {
 main .section-inicio .image-inicio .background-inicio {
   position: absolute;
   width: auto;
-  height: 348px;
+  height: 372px;
   right: 0;
   margin-top: 5%;
   z-index: 1;
@@ -274,7 +276,7 @@ main .section-inicio .image-inicio .background-inicio {
 
 main .section-inicio .image-inicio .img-inicio {
   width: auto;
-  height: 274px;
+  height: 264px;
   z-index: 999;
 }
 
@@ -356,7 +358,6 @@ main .section-produto {
 main .section-produto .content-produto {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -399,7 +400,7 @@ main .section-produto .content-produto .image-produto .circle-produtos {
 }
 
 main .section-produto .content-produto .informacoes-produto {
-  width: 65%;
+  width: 75%;
   z-index: 1;
   display: flex;
   flex-direction: column;

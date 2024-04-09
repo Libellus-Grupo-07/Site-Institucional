@@ -15,7 +15,4 @@ function mostrarMenu() {
         navbar.classList.remove("nav-item");
         navbar.classList.add("slow");
     }
-
 }   
-
-addEventListener(click, )
