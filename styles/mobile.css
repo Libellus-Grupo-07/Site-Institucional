@@ -52,7 +52,6 @@ largura máxima de 420px */
 
   header nav .nav .slow {
     /* height: 92vh; */
-
   }
 
   main {
@@ -475,7 +474,7 @@ largura máxima de 420px */
     display: flex;
     flex-direction: column;
     row-gap: 24px;
-    width: 80%;
+    width: 100%;
   }
 
   footer .footer-ul li a,
