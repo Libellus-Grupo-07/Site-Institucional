@@ -25,6 +25,7 @@ largura máxima de 420px */
     /* flex-direction: column; */
     justify-content: space-between;
     /* background-color: var(--azul-principal); */
+    z-index: 999999;
   }
 
   header nav .logo {
@@ -50,7 +51,7 @@ largura máxima de 420px */
   }
 
   header nav .nav .slow {
-    height: 92vh;
+    /* height: 92vh; */
   }
 
   main {
@@ -364,7 +365,7 @@ largura máxima de 420px */
 
   main .section-contato form input,
   main .section-contato form textarea {
-    width: 60vw;
+    width: 65vw;
     background: linear-gradient(white, white) padding-box,
       linear-gradient(
           100deg,
@@ -375,8 +376,8 @@ largura máxima de 420px */
     border-radius: 2rem;
     border: 1px solid transparent;
     padding: 8px 24px;
-    height: 24px;
-    font-size: 13.5px;
+    height: 28px;
+    font-size: 14px;
   }
 
   main .section-contato form .input-contato-descricao {
@@ -387,18 +388,18 @@ largura máxima de 420px */
   }
 
   button {
-    padding: 0px 20px;
-    height: 36px;
+    padding: 0px 24px;
+    height: 42px;
     border-radius: 100px;
   }
 
   .btn-background {
     letter-spacing: 0rem;
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .btn-border {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   h1 {
@@ -462,15 +463,18 @@ largura máxima de 420px */
 
   footer .footer-ul {
     display: grid;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     row-gap: 24px;
+    width: 80%;
+    margin: 0 auto;
   }
 
   footer .footer-ul ul {
     display: flex;
     flex-direction: column;
     row-gap: 24px;
+    width: 100%;
   }
 
   footer .footer-ul li a,
@@ -508,8 +512,8 @@ largura máxima de 420px */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-itens: center;
+    justify-content: flex-start;
+    align-itens: flex-start;
   }
 
   footer .copyright {
@@ -518,6 +522,7 @@ largura máxima de 420px */
     padding: 2rem;
     text-align: center;
     font-size: 14px;
+    line-height: 24px;
     color: var(--branco);
     font-family: "Poppins", Arial, Helvetica, sans-serif;
   }
@@ -530,7 +535,7 @@ largura máxima de 420px */
   }
 }
 
-@media (max-height: 667px) and (max-width:500px) {
+@media (max-height: 667px) and (max-width: 500px) {
   main .section-inicio .text-inicio .title-inicio {
     font-size: 32px;
     line-height: 56px;
@@ -558,12 +563,12 @@ largura máxima de 420px */
   }
 }
 
-@media (max-height: 932px) and (max-width: 500px){
-  main .section-inicio{
+@media (max-height: 932px) and (max-width: 500px) {
+  main .section-inicio {
     margin-bottom: 3rem;
   }
 
-  main .section-inicio .text-inicio{
+  main .section-inicio .text-inicio {
     width: 95%;
     margin-bottom: 1rem;
   }

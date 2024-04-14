@@ -180,17 +180,16 @@ largura máxima de 768px */
     height: 64px;
     padding: 24px 0px;
     display: flex;
+
     align-items: center;
+    z-index: 9999;
   }
 
   header nav {
     width: 85%;
-    /* height: 100%; */
     margin: 0 auto;
-    /* border:1px solid magenta; */
     display: flex;
     justify-content: space-evenly;
-    /* background-color: var(--azul-principal); */
   }
 
   header nav .logo {
@@ -199,11 +198,9 @@ largura máxima de 768px */
 
   header nav .nav {
     width: 75%;
-    /* height: 100vh; */
     display: flex;
     justify-content: flex-end;
     align-itens: center;
-    /* background: magenta; */
   }
 
   header nav .nav .nav-item {
@@ -212,17 +209,24 @@ largura máxima de 768px */
     position: absolute;
     margin-top: 10%;
     left: 100%;
-    transition: all 0.25s ease-in;
+    transition: all 0.25s ease-in-out;
   }
 
   header nav .nav .slow {
+    z-index: -1;
     width: 100vw;
-    height: 92vh;
+    height: 100vh;
     position: fixed;
     background-color: var(--branco-secundario);
+    background: linear-gradient(
+      120deg,
+      rgba(248, 247, 249, 0.99) 10%,
+      rgba(248, 247, 249, 1) 100%
+    );
+
     left: 0;
-    margin-top: 8vh;
-    transition: all 0.4s ease-in;
+    /* margin-top: 8vh; */
+    transition: all 0.4s ease-in-out;
     display: flex;
     align-itens: center;
     justify-content: center;
@@ -260,6 +264,7 @@ largura máxima de 768px */
 
   main {
     row-gap: 3rem;
+    z-index: 1;
   }
 
   main .section-inicio {
@@ -626,9 +631,11 @@ largura máxima de 768px */
 
   footer .footer-ul {
     display: grid;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     row-gap: 24px;
+    width: 80%;
+    /* margin: 0 auto; */
   }
 
   footer .footer-ul ul {
@@ -669,11 +676,11 @@ largura máxima de 768px */
 
   footer .footer .footer-ul:last-child {
     width: 80%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-itens: center;
+    justify-content: flex-start;
+    align-itens: flex-start;
   }
 
   footer .copyright {
@@ -694,18 +701,18 @@ largura máxima de 768px */
   }
 
   button {
-    padding: 0px 20px;
-    height: 36px;
+    padding: 0px 24px;
+    height: 40px;
     border-radius: 100px;
   }
 
   .btn-background {
     letter-spacing: 0rem;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .btn-border {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   h1 {
